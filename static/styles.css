@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tohoma:wght@400&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13pt;
+}
+
+p {
+    margin: 0;
+}
+
+#chat-container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #f1f1f1;
+    display: flex;
+}
+
+#chat-header{
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+}
+#chat-header img {
+    width: 30px;
+    height: 30px;
+    padding: 0 10px;
+} 
+.healthiai-logo {
+    color: rgba(58, 129, 195, 1);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 15pt;
+    flex-grow: 1;
+}
+
+#chat-nav {
+    padding: 5px 15px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+#chat-nav div {
+    padding: 0 5px;
+}
+#nav-title {
+    font-size: 20pt;
+    font-weight: 600;
+    color: #555;
+}
+.nav-separator {
+    color: #666;
+}
+#nav-username {
+    font-size: 12pt;
+    color: #888;
+    align-items: flex-end;
+}
+
+#chatbox {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    max-width: 75%;
+}
+
+.user-message {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.bot-message {
+    align-self: flex-start;
+    text-align: left;
+}
+
+.message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+#input-area {
+    display: flex;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #ddd;
+    border-radius: 25px;
+    outline: none;
+    width: 50%;
+}
+#input-container input {
+    font-size: 12pt;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex-grow: 1;
+}
+#input-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+#input-container button img {
+    width: 20px;
+    height: 20px;
+}
+#input-container button:focus {
+    outline: none;
+}
+
+.custom-file-upload:hover {
+    background: #0056b3;
+}
+
+#imageUpload {
+    display: none;
+}
+
+#questionnaire div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+#questionnaire label {
+    width: 80px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#questionnaire input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#submit:hover {
+    background-color: #218838;
+}
